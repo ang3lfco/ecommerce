@@ -22,7 +22,9 @@
     "react-dom": "latest",
     "react-sortablejs": "^6.1.4",
     "react-spinners": "^0.13.8",
-    "sortablejs": "^1.15.2"
+    "react-sweetalert2": "^0.6.0",
+    "sortablejs": "^1.15.2",
+    "sweetalert2": "^11.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
