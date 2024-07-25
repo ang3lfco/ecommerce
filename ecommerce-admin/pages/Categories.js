@@ -130,7 +130,7 @@ function Categories({swal}){
                         <div className="flex gap-1 mb-2">
                             <input type="text" value={property.name} className="mb-0" onChange={ ev => handlePropertyNameChange(index, property, ev.target.value) } placeholder="property name (example: color)"/>
                             <input type="text" className="mb-0" onChange={ev => handlePropertyValuesChange(index, property, ev.target.value)} value={property.values} placeholder="values, comma separated"/>
-                            <button onClick={() => removeProperty(index)} type="button" className="btn-default">Remove</button>
+                            <button onClick={() => removeProperty(index)} type="button" className="btn-red">Remove</button>
                         </div>
                     ))}
                 </div>
@@ -163,8 +163,8 @@ function Categories({swal}){
                                 <td>{category.name}</td>
                                 <td>{category?.parent?.name}</td>
                                 <td>
-                                    <button onClick={ () => editCategory(category) } className="mr-1 btn-primary">Edit</button>
-                                    <button onClick={ () => deleteCategory(category) } className="btn-primary">Delete</button>
+                                    <button onClick={ () => editCategory(category) } className="mr-1 btn-default">Edit</button>
+                                    <button onClick={ () => deleteCategory(category) } className="btn-red">Delete</button>
                                 </td>
                             </tr>
                         ))}
