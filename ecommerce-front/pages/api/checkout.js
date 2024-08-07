@@ -30,7 +30,6 @@ export default async function handler(req, res){
             });
         }
     }
-
     const orderDoc = await Order.create({
         line_items, name, email, city, postalCode, streetAddress, country, paid:false,
     });
@@ -41,7 +40,7 @@ export default async function handler(req, res){
         customer_email: email,
         success_url: process.env.PUBLIC_URL+'/cart?success=1',
         cancel_url: process.env.PUBLIC_URL+'/cart?canceled=1',
-        metadata: {orderId:orderDoc._id.toString()},
+        metadata: {orderId:orderDoc._id.toString(), test:'ok'},
     });
     res.json({
         url:session.url,
