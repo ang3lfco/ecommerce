@@ -7,14 +7,12 @@ import { useEffect, useState } from "react";
 export default function EditProductPage(){
     const [productInfo, setProductInfo] = useState(null);
     const router = useRouter();
-    // console.log({router});
     const {id} = router.query;
     useEffect(()=>{
         if(!id){
             return;
         } 
         axios.get('/api/products?id='+id).then(response => {
-            // console.log(response.data);
             setProductInfo(response.data);
         });
     }, [id]);

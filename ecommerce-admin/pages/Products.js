@@ -5,8 +5,6 @@ import { useEffect, useState } from "react"
 
 export default function Products(){
     const [products, setProducts] = useState([]);
-    
-    // useEffect(() => {axios.get('/api/products').then(response => {console.log(response.data)})}, [])
     useEffect(() => {axios.get('/api/products').then(response => {setProducts(response.data)})}, [])
     return(
         <Layout>

@@ -80,7 +80,6 @@ function Categories({swal}){
     }
 
     function handlePropertyNameChange(index, property, newName){
-        console.log({index, property, newName});
         setProperties(prev => {
             const properties = [...prev];
             properties[index].name = newName;
