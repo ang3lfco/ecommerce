@@ -20,12 +20,9 @@ export default async function handler(req, res){
         case 'checkout.session.completed':
         const data = event.data.object;
         const orderId = data.metadata.orderId;
-        const paid = data.payment_status === 'paid';
-        console.log(orderId);
-        console.log(paid);
+        const paid = data.object.payment_status === 'paid';
         if(orderId && paid){
             await Order.findByIdAndUpdate(orderId,{paid:true,});
-            console.log(Order.findById(orderId));
         }
         // Then define and call a function to handle the event payment_intent.succeeded
         
