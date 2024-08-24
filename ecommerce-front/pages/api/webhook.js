@@ -25,7 +25,7 @@ export default async function handler(req, res){
             await Order.findByIdAndUpdate(orderId,{paid:true,});
         }
         // Then define and call a function to handle the event payment_intent.succeeded
-        console.log(data);
+        
         break;
         // ... handle other event types
         default:

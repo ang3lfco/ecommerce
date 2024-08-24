@@ -162,7 +162,7 @@ export default function CartPage(){
                                 </thead>
                                 <tbody>
                                     {products.map(product => (
-                                        <tr>
+                                        <tr key={product._id}>
                                             <ProductInfoCell>
                                                 <ProductImageBox>
                                                     <img src={product.images[0]} alt=""/>
