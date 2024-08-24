@@ -1,7 +1,7 @@
 import { mongooseConnect } from "@/lib/mongoose";
 import { Order } from "@/models/Order";
-const stripe = require('stripe')(process.env.STRIPE_SK);
 import {buffer} from 'micro';
+const stripe = require('stripe')(process.env.STRIPE_SK);
 const endpointSecret = process.env.STRIPE_CLI_WS;
 
 export default async function handler(req, res){
@@ -21,8 +21,11 @@ export default async function handler(req, res){
         const data = event.data.object;
         const orderId = data.metadata.orderId;
         const paid = data.payment_status === 'paid';
+        console.log(orderId);
+        console.log(paid);
         if(orderId && paid){
             await Order.findByIdAndUpdate(orderId,{paid:true,});
+            console.log(Order.findById(orderId));
         }
         // Then define and call a function to handle the event payment_intent.succeeded
         
