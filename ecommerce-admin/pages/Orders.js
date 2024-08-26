@@ -32,7 +32,7 @@ export default function OrdersPage(){
                             </td>
                             <td>
                                 {order.name} {order.email} <br/>
-                                {order.city} {order.postalCode}
+                                {order.city} {order.postalCode}<br/>
                                 {order.country} <br/>
                             </td>
                             <td>
