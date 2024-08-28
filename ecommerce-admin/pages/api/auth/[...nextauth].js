@@ -4,7 +4,7 @@ import { AxiosError } from 'axios';
 import NextAuth, { getServerSession } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 
-const adminEmails = ['ang3lfco@outlook.com'];
+const adminEmails = process.env.ADMIN_EMAILS?.split(',') || [];
 
 export const authOptions = {
   providers: [
