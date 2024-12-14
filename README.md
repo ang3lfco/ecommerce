@@ -11,5 +11,5 @@ Admin view:
 ![admin-ang3lfco vercel app_Orders - Google Chrome 2024-08-27 22-58-48](https://github.com/user-attachments/assets/b2b39416-de63-4a08-8413-ca46d862e614)
 
 
-Admin: https://admin-ang3lfco.vercel.app/Categories
+Admin: https://admin-ang3lfco.vercel.app
 Front: https://front-ang3lfco.vercel.app/
