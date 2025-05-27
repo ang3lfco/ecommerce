@@ -5,7 +5,7 @@ can manage orders, products, and more.
 ## Live Demo
 
 - **Frontend (customer site):** [front-ang3lfco.vercel.app](https://front-ang3lfco.vercel.app)
-- **Admin Panel:** [admin-ang3lfco.vercel.app](https://admin-ang3lfco.vercel.app)
+- **Admin Panel (not accessible without permissions):** [admin-ang3lfco.vercel.app](https://admin-ang3lfco.vercel.app)
 
 ## Fast Live Demo (GIF Showcase)
 **Customer View:**
