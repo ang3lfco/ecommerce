@@ -1,5 +1,5 @@
 # E-commerce
-This is a full-featured e-commerce system with separate frontend and admin panel. It allows users to browse products, add them to the cart, and place orders, while administrators 
+This is a fullstack e-commerce system with separate frontend and admin panel. It allows users to browse products, add them to the cart, and place orders, while administrators 
 can manage orders, products, and more.
 
 ## Live Demo
