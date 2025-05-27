@@ -1,15 +1,23 @@
-Front view:
+# E-commerce
+This is a full-featured e-commerce system with separate frontend and admin panel. It allows users to browse products, add them to the cart, and place orders, while administrators 
+can manage orders, products, and more.
 
-![front-ang3lfco vercel app - Google Chrome 2024-08-27 22-41-21](https://github.com/user-attachments/assets/7aeed49d-d3bc-4e58-a7bb-d6be473238a7)
+## Live Demo
 
-Order and payment view:
+- **Frontend (customer site):** [front-ang3lfco.vercel.app](https://front-ang3lfco.vercel.app)
+- **Admin Panel:** [admin-ang3lfco.vercel.app](https://admin-ang3lfco.vercel.app)
 
-![front-ang3lfco vercel app_cart - Google Chrome 2024-08-27 22-47-06](https://github.com/user-attachments/assets/9b26ca0f-d272-45ff-b61e-f555167a7679)
+## Fast Live Demo (GIF Showcase)
+**Customer View:**
 
-Admin view:
+![Front](https://github.com/user-attachments/assets/7aeed49d-d3bc-4e58-a7bb-d6be473238a7)
 
-![admin-ang3lfco vercel app_Orders - Google Chrome 2024-08-27 22-58-48](https://github.com/user-attachments/assets/b2b39416-de63-4a08-8413-ca46d862e614)
+**Cart & Checkout:**
+
+![Cart](https://github.com/user-attachments/assets/9b26ca0f-d272-45ff-b61e-f555167a7679)
+
+**Admin Dashboard:**
+
+![Admin](https://github.com/user-attachments/assets/b2b39416-de63-4a08-8413-ca46d862e614)
 
 
-Admin: https://admin-ang3lfco.vercel.app
-Front: https://front-ang3lfco.vercel.app/
